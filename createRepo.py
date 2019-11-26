@@ -7,7 +7,7 @@ path = "/Users/uygur/Documents/MyProjects/"
 
 def createRepo():
     folderName = str(sys.argv[1])
-    g = Github("utepe", "Uygur_6942")
+    g = Github("username", "password")
     u = g.get_user()
     newRepo = u.create_repo(folderName)
     print("Created new repository " + str(folderName))
